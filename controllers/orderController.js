@@ -5,7 +5,8 @@ import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // Use environment variable for frontend URL
-const frontend_url = process.env.FRONTEND_URL || "http://localhost:5173";
+const frontend_url = process.env.FRONTEND_URL || "https://rasoda-front.vercel.app";
+
 
 // Placing User content from frontend
 const placeOrder = async (req, res) => {
